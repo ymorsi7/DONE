@@ -1,0 +1,28 @@
+{
+    "name": "DONE",
+    "displayName": "DONE",
+    "description": "A VS Code extension for the DONE programming language.",
+    "version": "0.0.1",
+    "publisher": "Yusuf 'DONE' Morsi",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": ["Programming Languages"],
+    "contributes": {
+        "languages": [
+            {
+                "id": "donelang",
+                "aliases": ["DoneLang", "donelang"],
+                "extensions": [".done"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "donelang",
+                "scopeName": "source.donelang",
+                "path": "./syntaxes/donelang.tmLanguage.json"
+            }
+        ]
+    }
+}
